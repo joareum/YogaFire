@@ -1,0 +1,1466 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 4000,
+    "height": 4000,
+    "scrollTop": -808.3466708333344,
+    "scrollLeft": -298.1167907137394,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "id": "5227d007-e599-440c-8887-453f3f7ed5be",
+        "name": "user",
+        "comment": "회원 테이블",
+        "columns": [
+          {
+            "id": "818c41b0-2cf9-45f4-a6de-51889adefd03",
+            "name": "user_id",
+            "comment": "회원 아이디",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 70.61181640625,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "d17fc250-3ba4-4944-9168-834d7527305b",
+            "name": "password",
+            "comment": "회원 비밀번호",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 83.61181640625,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "2209e156-2325-4812-afd3-daaea025a00c",
+            "name": "name",
+            "comment": "회원 이름",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "8f9664af-c7c2-4cac-aff7-80690227e830",
+            "name": "birthday",
+            "comment": "회원 생년월일",
+            "dataType": "VARCHAR(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 83.61181640625,
+              "widthDataType": 80.48876953125,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "55c4fb98-ffc6-44d8-bd5b-475559d02848",
+            "name": "email",
+            "comment": "회원 이메일",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 70.61181640625,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c02c48c2-aea2-41d7-ab06-098248635fab",
+            "name": "phone",
+            "comment": "전화번호",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "62f34fb4-b436-41ca-9efe-ef9168c84a7e",
+            "name": "nickname",
+            "comment": "닉네임",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "91131c4f-da41-4672-acd2-9a369d57ed51",
+            "name": "create_date",
+            "comment": "생성일자",
+            "dataType": "DATETIME",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.66259765625,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 147.6533203125
+            }
+          },
+          {
+            "id": "259e53a5-eaaa-400c-90ff-654890a240c3",
+            "name": "delete_yn",
+            "comment": "탈퇴여부",
+            "dataType": "VARCHAR(1)",
+            "default": "N",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 80.48876953125,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "1320ec12-1eef-413d-8dd9-8300560a8827",
+            "name": "weight",
+            "comment": "체중",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "e2e98ff2-fdac-444f-8c82-eb57fe8277bf",
+            "name": "sex",
+            "comment": "성별",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 925.6666,
+          "top": 23.3337,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 70.61181640625
+        },
+        "visible": true
+      },
+      {
+        "id": "1776ac41-e7c2-40d8-a94f-313514c6e000",
+        "name": "video",
+        "comment": "영상 테이블",
+        "columns": [
+          {
+            "id": "230ba80d-0adc-4671-b4b1-b243a3373957",
+            "name": "video_key",
+            "comment": "영상 고유 번",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60.5380859375,
+              "widthComment": 74.2236328125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "edfe29f1-9607-4ea7-9462-fc5ea5e4e22a",
+            "name": "video_title",
+            "comment": "영상 제목",
+            "dataType": "VARCHAR(1000)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60.5380859375,
+              "widthComment": 60,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c5320d95-12cd-4396-b04d-6ec152874724",
+            "name": "area",
+            "comment": "운동 부위",
+            "dataType": "VARCHAR(1000)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "bcd19ceb-e090-45ab-850a-74900b53225b",
+            "name": "center_name",
+            "comment": "요가원 이름(채널명과 동일)",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.8798828125,
+              "widthComment": 120,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "18f7c1e9-b968-47a8-ac93-ff4c053633e2",
+            "name": "view_cnt",
+            "comment": "조회수",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "55c1cb46-d570-40fd-9c56-7123acf192dd",
+            "name": "reg_date",
+            "comment": "영상 등록일",
+            "dataType": "DATETIME",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 70.61181640625,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 147.6533203125
+            }
+          },
+          {
+            "id": "70723fdd-8936-4c97-80ea-24a8318524e1",
+            "name": "v_comment_id",
+            "comment": "영상 댓글 고유 번호",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 86.5380859375,
+              "widthComment": 116.83544921875,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 160.1484,
+          "top": 357.7411,
+          "zIndex": 4,
+          "widthName": 60,
+          "widthComment": 70.61181640625
+        },
+        "visible": true
+      },
+      {
+        "id": "79a5bb1f-608b-4ade-9684-7ece932dac48",
+        "name": "video_comment",
+        "comment": "영상 댓글 테이블",
+        "columns": [
+          {
+            "id": "beec05b9-8b13-46ad-80bc-e711651a2a42",
+            "name": "v_comment_id",
+            "comment": "영상 댓글 고유 번호",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 86.5380859375,
+              "widthComment": 116.83544921875,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "00f72d2d-5d99-422a-9506-8b642a2c0b82",
+            "name": "v_comment_content",
+            "comment": "영상 댓글 내용",
+            "dataType": "VARCHAR(1000)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 119.0634765625,
+              "widthComment": 87.2236328125,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "b4c635c1-a1a3-4b36-b700-a27e6adc8205",
+            "name": "v_comment_reg",
+            "comment": "영상 댓글 등록일",
+            "dataType": "DATETIME",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 95.208984375,
+              "widthComment": 100.2236328125,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 147.6533203125
+            }
+          },
+          {
+            "id": "4cb12ff9-7771-4ee6-8040-a40dfe89b659",
+            "name": "delete_yn",
+            "comment": "삭제 여부",
+            "dataType": "VARCHAR(1)",
+            "default": "N",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 80.48876953125,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "1ff757c5-bd9a-4bf0-90ff-c87ff4bb16cd",
+            "name": "id",
+            "comment": "회원 아이디",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 70.61181640625,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "b3371e26-d501-4b28-a84d-de14a60d43d6",
+            "name": "video_key",
+            "comment": "영상 고유 번",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60.5380859375,
+              "widthComment": 74.2236328125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 163.6576,
+          "top": 763.8797,
+          "zIndex": 9,
+          "widthName": 93.76806640625,
+          "widthComment": 100.2236328125
+        },
+        "visible": true
+      },
+      {
+        "id": "80a26871-781f-41e2-82b9-f8eab75bec0f",
+        "name": "like",
+        "comment": "찜 테이블",
+        "columns": [
+          {
+            "id": "06a07b36-4247-4256-be1f-3e14ca1e749f",
+            "name": "like_id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "0239657b-2493-4813-8b7d-015b1d7a5032",
+            "name": "like_yn",
+            "comment": "",
+            "dataType": "VARCHAR(1)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 80.48876953125,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "6a178c7e-b0ef-4861-8a36-5243a14fdc84",
+            "name": "video_key",
+            "comment": "영상 고유 번호",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60.5380859375,
+              "widthComment": 87.2236328125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "f67705b2-4dda-447d-9f9c-4f4a8a954957",
+            "name": "user_id",
+            "comment": "회원 아이디",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 70.61181640625,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "d5da7a6f-200e-4f26-b77b-bf1f4c398da0",
+            "name": "video_key",
+            "comment": "영상 고유 번",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60.5380859375,
+              "widthComment": 74.2236328125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1247.3996,
+          "top": 544.6907,
+          "zIndex": 7,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true
+      },
+      {
+        "id": "9af622c9-f701-46c2-8fb0-071a1c083f76",
+        "name": "profile",
+        "comment": "요가원 상세 페이지 테이블",
+        "columns": [
+          {
+            "id": "b9a36689-292f-43d6-ad37-36a34d05ea05",
+            "name": "center_name",
+            "comment": "요가원 이름",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.8798828125,
+              "widthComment": 70.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "fedc8340-8649-4f0e-92f4-2099b28e591d",
+            "name": "center_detail",
+            "comment": "요가원 설명",
+            "dataType": "VARCHAR(10000)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 76.43896484375,
+              "widthComment": 70.61181640625,
+              "widthDataType": 109.40869140625,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "7baa85e7-d3cb-4da1-aca8-d098e900328c",
+            "name": "center_address",
+            "comment": "요가원 주소",
+            "dataType": "VARCHAR(1000)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 91.60986328125,
+              "widthComment": 70.61181640625,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "8dfab9fa-bbad-411c-9374-a017ab56845e",
+            "name": "center_img",
+            "comment": "요가원 프로필 사진",
+            "dataType": "VARCHAR(4000)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.30810546875,
+              "widthComment": 113.2236328125,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "b5df6895-2e2d-4277-94d2-122b47665ada",
+            "name": "center_price",
+            "comment": "요가원 가격",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 73.5380859375,
+              "widthComment": 70.61181640625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "6538c992-8f02-4305-9463-3cbcc43b909b",
+            "name": "video_key",
+            "comment": "영상 고유 번",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60.5380859375,
+              "widthComment": 74.2236328125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 942.4005,
+          "top": 755.3746,
+          "zIndex": 6,
+          "widthName": 60,
+          "widthComment": 120
+        },
+        "visible": true
+      },
+      {
+        "id": "33fc7ed6-5a2a-44c7-80d2-e405568a4123",
+        "name": "yoga_into",
+        "comment": "요가원 리스트 테이블",
+        "columns": [
+          {
+            "id": "1f6d9104-7fd6-4133-b43a-fa3f10067b93",
+            "name": "center_location",
+            "comment": "요가원 지역",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 90.1689453125,
+              "widthComment": 70.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "f49dad4a-c2ac-4d5f-bbff-2abdaa098713",
+            "name": "center_number",
+            "comment": "요가원 전화번호",
+            "dataType": "VARCHAR(13)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 89.43896484375,
+              "widthComment": 96.61181640625,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "f1748f10-aef1-4e74-b3d0-8592403c8a1c",
+            "name": "center_time",
+            "comment": "요가원 운영 시간",
+            "dataType": "TIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.919921875,
+              "widthComment": 100.2236328125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c6709a77-705c-4a71-9da3-a6f1e28c3d2d",
+            "name": "center_name",
+            "comment": "요가원 이름",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.8798828125,
+              "widthComment": 70.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 941.2024,
+          "top": 985.0835,
+          "zIndex": 5,
+          "widthName": 60,
+          "widthComment": 120
+        },
+        "visible": true
+      },
+      {
+        "id": "e66dae43-5a48-448b-a79e-60a855680858",
+        "name": "diet",
+        "comment": "식단 테이블",
+        "columns": [
+          {
+            "id": "cd103f38-5c24-4d5f-a14c-04e7de36cf52",
+            "name": "diet_id",
+            "comment": "식단 테이블 고유 번호",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "329f834a-220b-46bf-8f9c-9249e585038c",
+            "name": "rec_kcal",
+            "comment": "하루 권장 칼로리",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 100.2236328125,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "6ade10a5-29f7-4a02-915f-e921e9ad796c",
+            "name": "eat_kcal",
+            "comment": "섭취 칼로리",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 70.61181640625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "a82eeaa8-9367-46cf-9ee8-54a24cb1e633",
+            "name": "rest_kcal",
+            "comment": "남은 칼로리",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 70.61181640625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "8b24b561-c470-49ee-8834-f9989ebf4996",
+            "name": "user_id",
+            "comment": "회원 아이디",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 70.61181640625,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "85ba855b-7050-445d-9ff2-9496e198ef12",
+            "name": "food_name",
+            "comment": "식품",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 67.05078125,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1685.8336,
+          "top": 32.2856,
+          "zIndex": 3,
+          "widthName": 60,
+          "widthComment": 70.61181640625
+        },
+        "visible": true
+      },
+      {
+        "id": "a12d5fa9-b0e4-4bcb-a3b5-f0d795022c0c",
+        "name": "food_list",
+        "comment": "식품 영양 성분 리스트 테이블",
+        "columns": [
+          {
+            "id": "c8364284-b21f-4225-ac54-47eb8a17f6d2",
+            "name": "food_name",
+            "comment": "식품",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.05078125,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "7d4dcb2d-a975-4896-aa00-ead1b27aed58",
+            "name": "food_kcal",
+            "comment": "식품 칼로리",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 70.61181640625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "3da35b1b-a46a-4971-8b2c-1632bea00d3b",
+            "name": "food_gram",
+            "comment": "식품 중량",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.14990234375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "927427e3-f6f8-4006-a7b9-a945369e0970",
+            "name": "food_chech_yn",
+            "comment": "선택 여부",
+            "dataType": "VARCHAR(1)",
+            "default": "N",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 90.181640625,
+              "widthComment": 60,
+              "widthDataType": 80.48876953125,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1728.284,
+          "top": 355.9626,
+          "zIndex": 8,
+          "widthName": 60,
+          "widthComment": 120
+        },
+        "visible": true
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "id": "109186d9-3bc6-4b03-9e9c-b010ec1a824b",
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "5227d007-e599-440c-8887-453f3f7ed5be",
+          "columnIds": [
+            "818c41b0-2cf9-45f4-a6de-51889adefd03"
+          ],
+          "x": 1197.4898421875,
+          "y": 317.8337,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "80a26871-781f-41e2-82b9-f8eab75bec0f",
+          "columnIds": [
+            "f67705b2-4dda-447d-9f9c-4f4a8a954957"
+          ],
+          "x": 1247.3996,
+          "y": 587.5657,
+          "direction": "left"
+        },
+        "constraintName": "fk_user_to_like",
+        "visible": true
+      },
+      {
+        "id": "adf3eb85-e253-4804-8016-e94d6ff317bb",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "5227d007-e599-440c-8887-453f3f7ed5be",
+          "columnIds": [
+            "818c41b0-2cf9-45f4-a6de-51889adefd03"
+          ],
+          "x": 1469.313084375,
+          "y": 170.5837,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "e66dae43-5a48-448b-a79e-60a855680858",
+          "columnIds": [
+            "8b24b561-c470-49ee-8834-f9989ebf4996"
+          ],
+          "x": 1685.8336,
+          "y": 128.2856,
+          "direction": "left"
+        },
+        "constraintName": "fk_user_to_diet",
+        "visible": true
+      },
+      {
+        "id": "f5de1104-433f-4549-90b8-96d3a4439248",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "1776ac41-e7c2-40d8-a94f-313514c6e000",
+          "columnIds": [
+            "230ba80d-0adc-4671-b4b1-b243a3373957"
+          ],
+          "x": 465.33345859375004,
+          "y": 570.2411,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "79a5bb1f-608b-4ade-9684-7ece932dac48",
+          "columnIds": [
+            "b3371e26-d501-4b28-a84d-de14a60d43d6"
+          ],
+          "x": 483.523078515625,
+          "y": 763.8797,
+          "direction": "top"
+        },
+        "constraintName": "fk_video_to_video_comment",
+        "visible": true
+      },
+      {
+        "id": "b49e4622-01cd-4a96-aa45-5e4144317f6f",
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "1776ac41-e7c2-40d8-a94f-313514c6e000",
+          "columnIds": [
+            "230ba80d-0adc-4671-b4b1-b243a3373957"
+          ],
+          "x": 770.5185171875,
+          "y": 517.1161,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "9af622c9-f701-46c2-8fb0-071a1c083f76",
+          "columnIds": [
+            "6538c992-8f02-4305-9463-3cbcc43b909b"
+          ],
+          "x": 942.4005,
+          "y": 851.3746,
+          "direction": "left"
+        },
+        "constraintName": "fk_video_to_profile",
+        "visible": true
+      },
+      {
+        "id": "cc31d8c3-4ddf-4360-962f-62d00d740346",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "a12d5fa9-b0e4-4bcb-a3b5-f0d795022c0c",
+          "columnIds": [
+            "c8364284-b21f-4225-ac54-47eb8a17f6d2"
+          ],
+          "x": 1963.15509375,
+          "y": 355.9626,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "e66dae43-5a48-448b-a79e-60a855680858",
+          "columnIds": [
+            "85ba855b-7050-445d-9ff2-9496e198ef12"
+          ],
+          "x": 1933.833355859375,
+          "y": 224.2856,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_food_list_to_diet",
+        "visible": true
+      },
+      {
+        "id": "0ad42316-faf1-44a2-a427-b488a72db8c9",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "1776ac41-e7c2-40d8-a94f-313514c6e000",
+          "columnIds": [
+            "230ba80d-0adc-4671-b4b1-b243a3373957"
+          ],
+          "x": 770.5185171875,
+          "y": 410.8661,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "80a26871-781f-41e2-82b9-f8eab75bec0f",
+          "columnIds": [
+            "d5da7a6f-200e-4f26-b77b-bf1f4c398da0"
+          ],
+          "x": 1247.3996,
+          "y": 673.3157,
+          "direction": "left"
+        },
+        "constraintName": "fk_video_to_like",
+        "visible": true
+      }
+    ]
+  }
+}
