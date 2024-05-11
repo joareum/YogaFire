@@ -14,6 +14,7 @@ public class SwaggerConfig {
 	      return new OpenAPI()
 	              .info(new Info().title("SSAFY 11TH 1st semester Last Project")
 	              .description("YOGA FIRE")
+	              
 	              .version("v0.0.1")
 //	              .license(new License().name("SSAFY").url("https://www.ssafy.com"))
 	              );
