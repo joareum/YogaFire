@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yogafire.model.dao.VideoDao">
+
+	<select id="selectAll" resultType="video">
+		SELECT video_key, video_title,
+		area, center_name, view_cnt,
+		date_format(reg_date, '%Y-%m-%d') AS
+		reg_date FROM video;
+	</select>
+
+	<select id="selectOne" resultType="video" parameterType="int">
+		SELECT *
+		FROM video
+		WHERE video_key = #{videoKey};
+	</select>
+
+	<insert id="insertVideo" parameterType="Video">
+		INSERT INTO video
+		(video_title, area, center_name)
+		VALUES (#{videoTitle}, #{area},
+		#{centerName});
+	</insert>
+
+	<delete id="deleteVideo" parameterType="int">		
+		DELETE FROM video
+		WHERE video_key = #{videoKey};
+	</delete>
+
+	<update id="updateVideo" parameterType="Video">
+		UPDATE video
+		SET
+		video_title = #{videoTitle}, area = #{area}, center_name =
+		#{centerName}, reg_date = now()
+		WHERE video_key = #{videoKey}
+	</update>
+
+	<select id="searchDetail" resultType="video"
+		parameterType="searchCondition">
+		SELECT video_key, video_title, area, center_name, view_cnt,
+		date_format(reg_date, '%Y-%m-%d') AS reg_date FROM video
+		<if test="key != null">
+			WHERE ${key} LIKE concat('%', #{word}, '%')
+		</if>
+		<if test="orderBy != null">
+			ORDER BY ${orderBy} ${orderByDir}
+		</if>
+	</select>
+
+	<!-- video 테이블과 video_comment 테이블의 video_key로 join하고, v_comment의 컬럼들을 가져옴 -->
+	<select id="selectAllComment" resultType="videoComment" parameterType="int">
+  		SELECT video_comment.v_comment_id, video_comment.v_comment_content, date_format(video_comment.v_comment_reg, '%Y-%m-%d') AS v_comment_reg, video_comment.delete_yn, video_comment.user_id
+		FROM video_comment
+		LEFT OUTER JOIN video
+		ON video_comment.video_key = video.video_key
+		WHERE video_comment.video_key = #{videoKey} AND video_comment.delete_yn = 'N';
+	</select>
+		
+	<!-- 강사님 물어보기 -->	
+	<insert id="insertVComment" parameterType="VideoComment">
+    	INSERT INTO video_comment (v_comment_content, video_key)
+    	SELECT #{vCommentContent}, video.video_key
+    	FROM video
+    	WHERE video.video_key = #{videoKey};
+	</insert> 
+
+	<delete id="deleteVComment" parameterType="int">
+		DELETE FROM video_comment
+		WHERE v_comment_id = #{vCommentId};
+	</delete>
+
+	<update id="updateVComment" parameterType="VideoComment">
+		UPDATE video_comment
+		SET v_comment_content = #{vCommentContent}, v_comment_reg = now()
+		WHERE video_key = #{videoKey}
+	</update>
+
+	<update id="like" parameterType="int">
+		<!-- UPDATE video_comment SET like_yn = #{likeYn} WHERE video_key=${videoKey}; 
+			UPDATE video_like SET like_yn = #{likeYn} WHERE video_key=${videoKey}; -->
+		UPDATE video
+		JOIN video_like
+		ON video.video_key = video_like.video_key
+		SET video_like.like_yn = #{likeYn}
+		WHERE video_like.video_key = ${videoKey};
+	</update>
+
+	<select id="selectLike" resultType="video" parameterType="String">
+		SELECT video.video_key, video.video_title, video.area, video.center_name, video.view_cnt, date_format(video.reg_date, '%Y-%m-%d') AS reg_date
+		FROM video
+		LEFT OUTER JOIN video_like
+		ON video.video_key = video_like.video_key AND video_like.like_yn = 'Y'
+		WHERE video_like.user_id = #{userId};
+	</select>
+
+</mapper>
