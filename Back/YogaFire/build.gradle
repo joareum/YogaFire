@@ -22,26 +22,25 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
-    //api libs.org.springframework.boot.spring.boot.starter.validation
-    // api libs.org.springframework.boot.spring.boot.starter.web
-    // api libs.org.mybatis.spring.boot.mybatis.spring.boot.starter
-    // api libs.org.projectlombok.lombok
-    //api libs.org.springdoc.springdoc.openapi.starter.webmvc.ui
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+    // Uncomment and replace with the actual dependency identifier
+    // implementation 'org.springframework.boot:spring-boot-starter-validation'
+    // implementation 'org.springframework.boot:spring-boot-starter-web'
+    // implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter'
+    // implementation 'org.projectlombok:lombok'
+    // implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
+    // implementation 'org.springframework:spring-tx:5.3.12'
+    // implementation 'org.springframework.boot:spring-boot-starter-mail'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    // runtimeOnly libs.org.springframework.boot.spring.boot.devtools
-    runtimeOnly 'libs.com.mysql.mysql.connector.j'
-    testImplementation 'libs.org.springframework.boot.spring.boot.starter.test'
-    testImplementation 'libs.org.mybatis.spring.boot.mybatis.spring.boot.starter.test'
-	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.3'
-	testImplementation 'org.springframework.security:spring-security-test'
-	// swagger 설정
-	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
-	
+    // Replace with the correct MySQL connector dependency
+    // runtimeOnly 'mysql:mysql-connector-java'
+    runtimeOnly 'mysql:mysql-connector-java'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.3'
+    testImplementation 'org.springframework.security:spring-security-test'
+    	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
 }
 
 group = 'com.yogafire'
@@ -49,6 +48,7 @@ version = '0.0.1-SNAPSHOT'
 description = 'YogaFire'
 
 java {
+
 	sourceCompatibility = '17'
 }
 
@@ -63,5 +63,6 @@ tasks.withType(Javadoc) {
 }
 
 tasks.named('test') {
+
 	useJUnitPlatform()
 }
