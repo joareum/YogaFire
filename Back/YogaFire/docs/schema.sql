@@ -1,6 +1,8 @@
+
 -- drop database yogafire;
 -- create database yogafire;
         
+
 CREATE TABLE diet
 (
   diet_id   INT          NOT NULL AUTO_INCREMENT COMMENT '식단 테이블 고유 번호',
@@ -75,6 +77,7 @@ CREATE TABLE video
   view_cnt     INT           NOT NULL DEFAULT 0 COMMENT '조회수',
   reg_date     DATETIME      NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '영상 등록일',
   v_comment_id INT           NOT NULL DEFAULT 0 COMMENT '영상 댓글 고유 번호',
+
   PRIMARY KEY (video_key)
 ) COMMENT '영상 테이블';
 
@@ -154,5 +157,3 @@ ALTER TABLE video_like
     REFERENCES video (video_key)
     ON DELETE CASCADE;
 
-        
-      
